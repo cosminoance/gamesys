@@ -26,4 +26,4 @@ Feature: Testing some API calls while
     Scenario: Wrong author, expect Jackpotjoy
     Given the endpoint https://www.youtube.com
     When I GET application/xml /feeds/videos.xml?user=jackpotjoy
-    Then I should have at least 15 author as Jackpotjoy
+    Then I should have at least 10 author as Jackpotjoy

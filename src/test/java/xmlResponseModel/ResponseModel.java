@@ -9,8 +9,7 @@ import xmlResponseModel.videos.EntryModel;
 public abstract class ResponseModel {
 
 	String responseString;
-
-
+	
 	public ResponseModel(String responseString) {
 		this.responseString = responseString;
 	}
