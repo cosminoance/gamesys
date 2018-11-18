@@ -6,7 +6,7 @@ Feature: Testing some API calls while
     When I GET application/xml /feeds/videos.xml?user=jackpotjoy
     Then I should receive response code 200
     Then I should print entries as string
-    And save response as file
+    And save response as file for youtube.com/feeds/videos/user-jackpotjoy
 
   Scenario: Wrong query parameter, expect 400
     Given the endpoint https://www.youtube.com

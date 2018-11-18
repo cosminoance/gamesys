@@ -9,8 +9,8 @@ public class StringToOutputFile {
 	String output;
 	String extension;
 
-	public StringToOutputFile(String output, String extension) {
-		name = Timestamp.get() + extension;
+	public StringToOutputFile(String root, String output, String extension) {
+		name = root+Timestamp.get() + extension;
 		this.output = output;
 	}
 

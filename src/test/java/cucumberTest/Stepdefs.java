@@ -82,10 +82,10 @@ public class Stepdefs {
 		}
 	}
 
-	@Then("^save response as file$")
-	public void save_response_as_file() throws Exception {
+	@Then("^save response as file for (.*)$")
+	public void save_response_as_file(String name) throws Exception {
 		if (response != null) {
-			new StringToOutputFile(response.getAsString(), content).save();
+			new StringToOutputFile(name, response.getAsString(), content).save();
 		}
 	}
 }
