@@ -25,7 +25,6 @@ public class SimpleResponse {
 		response = resp;
 		parseString();
 		document = parseDocument();
-
 	}
 
 	private void parseString() throws IllegalStateException, IOException {
