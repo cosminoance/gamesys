@@ -1,5 +1,5 @@
 # gamesys
-
+NOTE: apparently I missed a whole chunk of the internet dealing in parsing RSS feeds in Java, so I didn't try one of those libraries.
 ### Introduction
 This is a cucumber project that gets a user's video feed and runs some scenarios on the response. It outputs the responses in the `/output/[resources]/[query_parameter]-[value][timestamp].[contentType]` folder
 - It can be run via:
@@ -24,7 +24,7 @@ This is a cucumber project that gets a user's video feed and runs some scenarios
     - `Verify at least 10 of the authors is called “Jackpotjoy”` (this *should* pass as long as no one deletes 6 videos out of the 15)
     
 ### Disclaimer
-This is basically a day's work.
+This is basically a day's work. 
 Some things could have been done much nicer. 
 1. Parsing the response as `XML` proved to be difficult, neither `XPathFactory` nor `Document.getElementsByTagName` worked. I have a feeling that it has something to do with the various namespaces associated with the document. Due to lack of time, I ended up parsing the text and modeling just the `<entry>` part that I needed for the tests. Even so, the model could have been cleaner and made use of more abstractions (instead of the dreadfully specific `buildEntries()` in `UserVideos`)
 2. **Dependency Injection**. There is only one step definition file and no **DI** library (I had looked into Picocontainer, but it was not behaving properly, that's why there is a `World` class). Ideally, I would split those step definitions based on, well, behaviour :) 
