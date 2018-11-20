@@ -1,5 +1,6 @@
 # gamesys
 NOTE: apparently I missed a whole chunk of the internet dealing in parsing RSS feeds in Java, so I didn't try one of those libraries.
+NOTE2: 20.11 - rechecked the output sample and realised the extension was not proper, so added the `.` between the file name and the extension
 ### Introduction
 This is a cucumber project that gets a user's video feed and runs some scenarios on the response. It outputs the responses in the `/output/[resources]/[query_parameter]-[value][timestamp].[contentType]` folder
 - It can be run via:
