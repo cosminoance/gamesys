@@ -10,7 +10,7 @@ public class StringToOutputFile {
 	String extension;
 
 	public StringToOutputFile(String root, String output, String extension) {
-		this.extension = extension;
+		this.extension = "." + extension;
 		name = root+Timestamp.get();
 		this.output = output;
 	}

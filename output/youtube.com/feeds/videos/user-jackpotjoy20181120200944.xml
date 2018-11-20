@@ -52,7 +52,7 @@
    <media:description>Be our guest and guess the Bingo call!</media:description>
    <media:community>
     <media:starRating count="0" average="0.00" min="1" max="5"/>
-    <media:statistics views="32"/>
+    <media:statistics views="34"/>
    </media:community>
   </media:group>
  </entry>
@@ -351,7 +351,7 @@
    <media:description>Our new royal has been prepping for the crown. Check out our TV advert and grab fun by the balls!</media:description>
    <media:community>
     <media:starRating count="38" average="3.00" min="1" max="5"/>
-    <media:statistics views="6967"/>
+    <media:statistics views="6976"/>
    </media:community>
   </media:group>
  </entry>
